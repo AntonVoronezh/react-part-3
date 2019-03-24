@@ -24,6 +24,7 @@ class App extends Component {
        
          <Route path="/" exact render={()=><h1>Home page</h1>} />
          <Route path="/about" exact component={About} />
+         <Route path="/cars" exact component={Cars} />
       </div>
     );
   }
