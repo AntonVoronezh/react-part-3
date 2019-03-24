@@ -16,15 +16,18 @@ class App extends Component {
             <li>
               <a href="/about">About</a>
             </li>
+            <li>
+              <a href="/cars">Cars</a>
+            </li>
           </ul>
         </nav>
        
-        <About />
          <Route path="/" exact render={()=><h1>Home page</h1>} />
-        <Cars />
+         <Route path="/about" exact component={About} />
       </div>
     );
   }
 }
 
 export default App;
+``
