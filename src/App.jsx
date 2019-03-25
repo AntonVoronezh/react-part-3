@@ -45,6 +45,7 @@ class App extends Component {
         <hr />
         <Switch>
           <Route path="/" exact render={() => <h1>Home page</h1>} />
+          {this.state.isInLogged ? <Route path="/about" exact component={About} /> : null}
          
           <Route path="/cars/:name" component={CarDetail} />
           <Route path="/cars" component={Cars} />
