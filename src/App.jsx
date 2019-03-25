@@ -1,11 +1,13 @@
 import React, { Component } from "react";
-import classes from "./App.css";
+import classes from "./App.scss";
 import Cars from './Cars/Cars.jsx'
 import About from './About/About.jsx'
 import {Route, NavLink} from 'react-router-dom'
 
 class App extends Component {
+
   render() {
+    
     return (
       <div>
         <nav className={classes.nav}>
@@ -18,9 +20,7 @@ class App extends Component {
             </li>
             <li>
               <NavLink to={{
-                pathname:"/cars",
-                search:'?a=1&b=2',
-                hash:'ffffff'
+                pathname:"/cars"
               }}>Cars</NavLink>
             </li>
           </ul>
